@@ -1,6 +1,10 @@
 body {
     background-color: rgb(9, 9, 10);
     font-family: 'Permanent Marker', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 header {
@@ -78,12 +82,11 @@ find:focus {
 }
 
 .container {
-    position: absolute;
     width: 80vw;
-    left: 10vw;
-    height: 75%;
-    top: 25%;
+    height: 75vh;
+    margin-top: 1rem;
 }
+
 
 #mapContainer {
     width: inherit;
