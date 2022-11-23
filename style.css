@@ -1,0 +1,96 @@
+body {
+    background-color: rgb(9, 9, 10);
+    font-family: 'Permanent Marker', cursive;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+
+header>h1 {
+    margin: 0;
+    color: aliceblue;
+    font-size: 3.5rem;
+    font-weight: 400;
+}
+
+@media (max-width:615px) {
+    header>h1 {
+        font-size: 2.5rem;
+    }
+}
+
+.button-panel {
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.image1,
+.image2 {
+    width: 25%;
+    height: 6rem;
+}
+
+.image1 {
+    background-image: url('./corrie1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image2 {
+    background-image: url('./corrie2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#find {
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.3rem;
+    color: blueviolet;
+    margin: 0 1rem;
+}
+
+
+
+#find:hover,
+find:focus {
+    background-color: blueviolet;
+    color: rgb(9, 9, 10);
+}
+
+#find:active {
+    background-color: rgb(9, 9, 10);
+    color: aliceblue;
+}
+
+.container {
+    position: absolute;
+    width: 80vw;
+    left: 10vw;
+    height: 75%;
+    top: 25%;
+}
+
+#mapContainer {
+    width: inherit;
+    height: 100%;
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+}
